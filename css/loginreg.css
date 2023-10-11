@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Now Black';
+    src: url('../fonts/Now-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Now Bold';
+    src: url('../fonts/Now-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Now Medium';
+    src: url('../fonts/Now-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Now Regular';
+    src: url('../fonts/Now-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Now Light';
+    src: url('../fonts/Now-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Now Thin';
+    src: url('../fonts/Now-Thin.otf') format('opentype');
+}
+
+:root{
+    --cor1: #fff;
+    --cor2: #f2f2f2;
+    --cor3: #1e4dd9;
+    --cor4: #1b44bf;
+    --cor5: #0a2473;
+    --cor6: #001242;
+    --cor7: #000;
+
+    --corhover1: #e6e6e6;
+    --corhover2: #d4d4d4;
+    --corhover3: #bababa;
+    --corhover4: #a8a8a8;
+    --corhover5: #585858;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--corhover4);
+    border-radius: 5px;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.div3-navctn-navbar{
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    border-bottom: 1px solid #cccccc1e;
+}
+
+.span1-logo-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+.img1-logoctn-navbar{
+    width: 50px;
+}
+
+.span2-namelogo-navbar{
+    font-size: 30px;
+    font-family: 'Now Medium';
+    color: var(--cor1);
+}
+
+.div3-textlogin-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+.div2-main__Ctn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form1-loginctn-main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginnav{
+    position: absolute;
+    width: 100%;
+}
+
+.loginform{
+    height: 100vh;
+}
+
+.registroform{
+    margin: 100px 0px;
+}
+
+.span1-textlogin-main{
+    font-size: min(6.8vw, 30px);
+    font-family: 'Now Bold';
+    font-weight: 600;
+}
+
+.span1-ptxtlogin-main{
+    font-family: 'Now Light';
+    font-size: clamp(14px, 3.8vw, 18px);
+    font-weight: 600;
+    color: var(--corhover5);
+}
+
+.div3-boxlogin-main{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.div5-infologinipt-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.span1-nameinput-main,
+.span1-esqueceusenha-main{
+    font-family: 'Now Medium';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.span1-esqueceusenha-main > a{
+    color: var(--corhover5);
+    text-decoration: none;
+}
+
+.span1-esqueceusenha-main:hover{
+    text-decoration: underline;
+}
+
+.div4-boxinput-main,
+.divau-inlineiptbox-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.divau-inlineiptbox-main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+.input1-campologin-main,
+.input1-campoinput-main{
+    display: flex;
+    border: 1px solid var(--cor7);
+    margin-top: 14px;
+    text-overflow: ellipsis;
+    width: -webkit-fill-available;
+    cursor: text;
+    font-size: 18px;
+    border: 1px solid #999999;
+    font-family: 'Now Regular';
+    border-radius: 8px;
+    height: 28px;
+    padding: 16px 15px 16px 15px;
+}
+
+.div4-boxinput-main.success input{
+    border-color: #00a000;
+}
+
+.div4-boxinput-main.error input{
+    border: 2.5px solid #a00000;
+}
+
+.div4-boxinput-main.error label{
+    color: #a00000;
+}
+
+.div6-errormsg-main{
+    display: none;
+}
+
+.div4-boxinput-main.error small{
+    display: block;
+    color: #a00000;
+    font-family: 'Now Regular';
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.div5-lembrarlogin-main{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+#checkbox{
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.span1-checkbox-main{
+    font-family: 'Now Regular';
+    font-weight: 500;
+    color: var(--corhover5);
+    font-size: 16px;
+}
+
+.span1-checkbox-main > a{
+    color: var(--cor5);
+    text-decoration: none;
+}
+
+.span1-checkbox-main > a:hover{
+    text-decoration: underline;
+}
+
+.div3-btnlogreg-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+    gap: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn1-logregbtn-main{
+    width: 100%;
+    text-align: center;
+    color: var(--cor1);
+    font-weight: 500;
+    background-color: #121212;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    height: 48px;
+    font-family: 'Now Regular';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn1-logregbtn-main:hover{
+    background-color: #2b2b2b;
+}
+
+.span-logreg-main{
+    font-family: 'Now Light';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.span-logreg-main > a{
+    color: #181818;
+    text-decoration: none;
+}
+
+.span-logreg-main > a:hover{
+    text-decoration: underline;
+}
+
+.radiooptgener{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+    gap: 16px;
+    margin: 25px 0px 10px 0px;
+}
+
+.div6-radiobox-main{
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+.radiogenero{
+    width: 20px;
+    height: 20px;
+}
+
+.span1-namegenero-main{
+    font-family: 'Now Regular';
+    font-weight: 400;
+}

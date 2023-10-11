@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginreg.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="div1-divmae-conteiner">
+        <div class="div2-navbar__Ctn-navbar">
+            <div class="div3-navctn-navbar loginnav">
+                <span class="span1-logo-navbar">
+                    <img class="img1-logoctn-navbar" src="images/logo-pint.png" alt="">
+                    <span class="span2-namelogo-navbar">MySound</span>
+                </span>
+            </div>
+        </div>
+        <div class="div2-main__Ctn-main">
+            <form action="registrar.php" method="POST" id="form" class="form1-loginctn-main loginform">
+                <div class="div3-textlogin-main">
+                    <span class="span1-textlogin-main">Entrar na sua conta</span>
+                    <span class="span1-ptxtlogin-main">Insira os dados para continuar navegando!</span>
+                </div>
+                <div class="div3-boxlogin-main">
+                    <div class="div4-boxinput-main">
+                        <label for="email" class="span1-nameinput-main">Email</label>
+                        <input type="text" id="email" class="input1-campologin-main" placeholder="Email">
+                        <small class="div6-errormsg-main"></small>
+                    </div>
+                    <div class="div4-boxinput-main senha-boxinput">
+                        <div class="div5-infologinipt-main">
+                            <span class="span1-nameinput-main">Senha</span>
+                            <span class="span1-esqueceusenha-main"><a href="#">Esqueceu a Senha?</a></span>
+                        </div>
+                        <input type="password" id="senha" class="input1-campologin-main" placeholder="Senha">
+                        <small class="div6-errormsg-main"></small>
+                    </div>
+                    <div class="div5-lembrarlogin-main">
+                        <input type="checkbox" class="checkboxlembrar" id="checkbox">
+                        <span class="span1-checkbox-main">
+                            Manter conectado
+                        </span>
+                    </div>
+                </div>
+                <div class="div3-btnlogreg-main">
+                    <button type="submit" class="btn1-logregbtn-main">Login</button>
+                    <span class="span-logreg-main">
+                        Ainda não tem login. <a href="registrar.html">Registrar!</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
